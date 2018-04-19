@@ -1,0 +1,11 @@
+.nav-bordered > li > a {
+  border: 2px solid transparent;
+}
+
+.nav-bordered > li > a:hover {
+  border-color: #5b6168;
+}
+
+.nav-bordered > li.active {
+  border-color: inherit;
+}

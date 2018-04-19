@@ -1,0 +1,979 @@
+html, body {
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font: 14px 'PT Sans', sans-serif;
+    color: #000;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    position: relative;
+    margin: 0 0 15px;
+}
+
+.top-menu {
+    z-index: 2;
+}
+
+.wrapper {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper :after {
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.top-menu .triangle{
+    width: 137px;
+    height: 70.778px;
+    background-size: 137px 70px;
+    fill: #81b3d2;
+    padding: 0;
+    margin: 0 0 0 -69px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+}
+
+.top-menu .logo {
+    margin: 0 0 0 -33px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.top-menu ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: #fff;
+}
+
+.top-menu li {
+    list-style: none;
+    display: inline-block;
+    background: #fff;
+    margin: 0;
+    float: left;
+}
+
+.top-menu .right {
+    float: right;
+    margin: 0;
+    padding: 0 6px;
+}
+
+.top-menu ul li a {
+    margin: 0;
+    padding: 19px 72px;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.intro-layout {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro {
+    width: 100%;
+    padding: 80px 0 32px;
+    margin: -70px auto 0;
+    background: url('images/bg-main-bottom.png') no-repeat 0 100%, url('images/bg-main.png') no-repeat 50% 0;
+    z-index: 1;
+}
+
+.intro svg{
+    display: block;
+    margin: 0 auto 52px;
+    fill: #fff;
+}
+
+.intro svg:first-child {
+    margin: 53px auto 10px;
+}
+
+.intro svg.text-color-blue{
+    fill: #81b3d2;
+}
+
+.intro svg.text-color-brown {
+    fill: #766357;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 13px 0 81px;
+    background: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.content .text {
+    margin: 47px 0 37px;
+}
+
+.content .text .title {
+    font-size: 30px;
+    display: block;
+    margin: 0 0 28px 0;
+}
+
+.content .text p {
+    line-height: 22px;
+}
+
+.content h1 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+.content .reasons {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.content .reasons-left {
+    background: #81b3d2 url('images/photo-city@1x.jpg') no-repeat 100% 54%;
+    color: #fff;
+}
+
+.content .reasons-right {
+    background: #81b3d2 url('images/photo-bridge@1x.jpg') no-repeat 0% 53%;
+    color: #fff;
+}
+
+.content .reason {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 23px;
+    padding: 53px 850px 42px 53px;
+}
+
+.content .reason2 {
+    padding: 54px 53px 42px 855px;
+}
+
+.content .reasons h2 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.content .reasons p {
+    padding: 0 0 2px;
+}
+
+.content .features-holder {
+    width: 100%;
+}
+
+.content .features {
+    padding: 147px 68px 72px 72px;
+    text-align: center;
+    float: left;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.content .features:last-child {
+    float: right;
+    padding: 147px 92px 72px 72px;
+}
+
+.content .features .title {
+    font-size: 21px;
+    line-height: 47px;
+}
+
+.content .feature1 {
+    fill: #81b3d2;
+    position: absolute;
+    top: 60px;
+    left: 160px;
+}
+
+.content .feature2 {
+    fill: #81b3d2;
+    position: absolute;
+    top: 60px;
+    left: 169px;
+}
+
+.content .feature3 {
+    fill: #81b3d2;
+    position: absolute;
+    top: 57px;
+    left: 149px;
+}
+
+.content .reasons-holder {
+    width: 100%;
+    background: #eee;
+    padding: 28px 0 48px;
+}
+
+.content .reason-block{
+    float: left;
+    padding: 0 70px;
+}
+
+.content .reason-block:last-child {
+    float: right;
+    margin: 0 0 0 -5px;
+}
+
+.search-hotels .registration{
+    background: #fff;
+    margin: 0 0 0 -284px;
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    z-index: 10;
+}
+
+.search-hotels .registration .header {
+    font-size: 21px;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #766357;
+    padding: 30px 137px;
+}
+
+.search-hotels .registration form {
+    padding: 55px;
+}
+
+.search-hotels .registration .data-row {
+    margin: 0 0 30px;
+}
+
+.search-hotels .registration label {
+    float: left;
+    padding: 6px 0;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.search-hotels .registration .calendar-input {
+    float: right;
+    position: relative;
+}
+
+.search-hotels .registration .data-row .date-label {
+    width: 296px;
+    padding: 6px 35px 6px 16px;
+    border: none;
+    background: #f2f2f2;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.search-hotels .registration .data-row .row {
+    width: 60px;
+}
+
+.search-hotels .registration .calendar-input a {
+    display: block;
+    margin: 0;
+    fill: #c2c2c2;
+    width: 19.875px;
+    height: 21.916px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.search-hotels .registration .data-row .column {
+    float: right;
+}
+
+.search-hotels .registration .data-row .column:first-child {
+    float: left;
+}
+
+.search-hotels .registration .data-row .column label {
+    margin: 0 26px 0 0;
+}
+
+.search-hotels .registration .data-row .column:first-child label {
+    margin: 0 40px 0 0;
+}
+
+.search-hotels .registration .quantity-input {
+    float: left;
+    margin: 0 40px 0;
+    position: relative;
+}
+
+.search-hotels .registration .quantity-input:last-child {
+    margin: 0;
+}
+
+.search-hotels .registration .cell {
+    width: 60px;
+    padding: 6px 27px;
+    border: none;
+    background: #f2f2f2;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-hotels .registration .data-row .column .quantity-input a {
+    fill: #c2c2c2;
+    width: 9.917px; 
+    position: absolute;
+    
+}
+
+.search-hotels .registration .data-row .column .btn-control-minus {
+    left: 15px;
+    top: 18px;
+}
+
+.search-hotels .registration .data-row .column .btn-control-plus{
+    left: 90px;
+    top: 15px;
+}
+
+.search-hotels .registration .button_block {
+    padding: 24px 0 0;
+}
+
+.search-hotels .registration .button_block .submit {
+    width: 100%;
+    padding: 16px;
+    margin: 0;
+    border: none;
+    font-size: 19px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: #81b3d2;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.footer .footer-content {
+    width: 100%;
+    padding: 31px 0;
+    position: absolute;
+    bottom: 4px;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.footer .footer-content .block {
+    width: 33%;
+    margin: 0;
+    float: left;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.footer .footer-content .social-block {
+    width: 34%;
+}
+
+.footer .footer-content .social-block ul {
+    padding: 0 0 10px;
+    margin: 0;
+}
+
+.footer .footer-content .social-block li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+
+.footer .footer-content .social-block ul li a {
+    margin: 0 6px 0 0;
+    padding: 0;
+    width: 47px;
+    height: 48px;
+    display: block;
+    background: #81b3d2;
+    fill: #fff;
+}
+
+.footer .footer-content .social-block .youtube {
+    margin: 0;
+    
+}
+
+.footer .footer-content .social-block .twitter svg {
+    position: relative;
+    top: 17px;
+    left: 15px;
+}
+
+.footer .footer-content .social-block .facebook svg {
+    position: relative;
+    top: 14px;
+    left: 20px;
+}
+.footer .footer-content .social-block .youtube svg{
+    position: relative;
+    top: 17px;
+    left: 14px;
+    fill: #fff;
+}
+
+.footer .footer-content .copyright-block {
+    float: right;
+    font-size: 14px;
+}
+
+.footer .footer-content .copyright-block p {
+    display: inline-block;
+    padding: 0;
+    margin: 8px 10px 0 6px;
+}
+
+.footer .footer-content .copyright-block svg {
+    fill: #000;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .wrapper {
+    max-width: 768px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    }
+    
+    .wrapper :after {
+        content: '';
+        display: block;
+        clear: both;
+        overflow: hidden;
+    }
+    
+    .top-menu .triangle{
+        width: 137px;
+        height: 70.778px;
+        background-size: 137px 70px;
+        fill: #81b3d2;
+        padding: 0;
+        margin: 0 0 0 -69px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 2;
+    }
+    
+    .top-menu .logo {
+        margin: 0 0 0 -33px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 3;
+    }
+    
+    .top-menu ul {
+        padding: 0;
+        margin: 0 0 14px 0;
+        position: relative;
+        top: 0;
+        background: #fff;
+    }
+    
+    .top-menu li {
+        list-style: none;
+        display: inline-block;
+        background: #fff;
+        margin: 0;
+        float: left;
+    }
+    
+    .top-menu .right {
+        float: right;
+        margin: 0;
+        padding: 0 6px 0 4px;
+    }
+    
+    .top-menu ul li a {
+        margin: 0;
+        padding: 19px 29px;
+        display: block;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .intro-layout {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .intro {
+        width: 1200px;
+        padding: 80px 0 32px;
+        margin: -70px 0 0 -600px;
+        background: url('images/bg-main-bottom.png') no-repeat 0 100%, url('images/bg-main.png') no-repeat 0 0;
+        position: relative;
+        left: 50%;
+        z-index: 1;
+    }
+    
+    .intro svg{
+        display: block;
+        margin: 0 auto 52px;
+        fill: #fff;
+    }
+    
+    .intro svg:first-child {
+        margin: 53px auto 10px;
+    }
+    
+    .intro svg.text-color-blue{
+        fill: #81b3d2;
+    }
+    
+    .intro svg.text-color-brown {
+        fill: #766357;
+    }
+    
+    .content {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        padding: 13px 0 81px;
+        margin: 0;
+        background: #fff;
+        font-family: 'PT Sans', sans-serif;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+    
+    .content .text {
+        margin: 47px 0 37px;
+    }
+    
+    .content .text .title {
+        font-size: 30px;
+        font-weight: bold;
+        display: block;
+        margin: 0 0 27px 0;
+    }
+    
+    .content .text p {
+        line-height: 22px;
+    }
+    
+    .content h1 {
+        font-size: 21px;
+        font-weight: bold;
+        display: block;
+        margin: 0 0 30px 0;
+    }
+    
+    .content p {
+        font-size: 14px;
+    }
+    
+    .content .reasons {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .content .reasons-left {
+        background: #81b3d2 url('images/photo-city@1x.jpg') no-repeat 100% 54%;
+        color: #fff;
+    }
+    
+    .content .reasons-right {
+        background: #81b3d2 url('images/photo-bridge@1x.jpg') no-repeat 0% 53%;
+        color: #fff;
+    }
+    
+    .content .reason {
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 23px;
+    }
+    
+    .content .reason1 {
+        padding: 53px 850px 42px 53px;
+    }
+    
+    .content .reason2 {
+        padding: 54px 53px 42px 855px;
+    }
+    
+    .content .reasons h2,
+    .content .reason h2 {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 21px;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .content .reasons p,
+    .content .reason p {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        padding: 0 0 2px;
+    }
+    
+    .content .features-holder {
+        width: 100%;
+    }
+    
+    .content .features {
+        padding: 147px 68px 72px 72px;
+        text-align: center;
+        float: left;
+        position: relative;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    
+    .content .features:last-child {
+        float: right;
+        padding: 147px 92px 72px 72px;
+    }
+    
+    .content .features strong {
+        font-size: 21px;
+        line-height: 47px;
+    }
+    
+    .content .feature1 {
+        fill: #81b3d2;
+        position: absolute;
+        top: 60px;
+        left: 160px;
+    }
+    
+    .content .feature2 {
+        fill: #81b3d2;
+        position: absolute;
+        top: 60px;
+        left: 169px;
+    }
+    
+    .content .feature3 {
+        fill: #81b3d2;
+        position: absolute;
+        top: 57px;
+        left: 149px;
+    }
+    
+    .content .reasons-holder {
+        width: 100%;
+    }
+    
+    .content .reason3,
+    .content .reason4,
+    .content .reason5{
+        background: #eee;
+        float: left;
+        padding: 45px 70px 49px;
+    }
+    .content .reason5 {
+        float: right;
+        margin: 0 0 0 -5px;
+    }
+    
+    .search-hotels {
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .search-hotels .registration{
+        background: #fff;
+        margin: 0 0 0 -284px;
+        padding: 0;
+        position: absolute;
+        top: -85px;
+        left: 50%;
+        z-index: 10;
+    }
+    
+    .search-hotels .registration .header {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 21px;
+        line-height: 26px;
+        color: #fff;
+        text-transform: uppercase;
+        background: #766357;
+        padding: 30px 137px;
+    }
+    
+    .search-hotels .registration form {
+        margin: 0;
+        padding: 55px;
+    }
+    
+    .search-hotels .registration .date-arr,
+    .search-hotels .registration .date-dep,
+    .search-hotels .registration .search_field{
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+    
+    .search-hotels .registration .date-arr label,
+    .search-hotels .registration .date-dep label,
+    .search-hotels .registration .adults_field label,
+    .search-hotels .registration .children_field label{
+        display: block;
+        float: left;
+        padding: 6px 0;
+        margin: 0;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        line-height: 26px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .search-hotels .registration .calendar-input {
+        display: block;
+        float: right;
+        position: relative;
+        margin: 0;
+    }
+    
+    .search-hotels .registration .date-arr .date-label,
+    .search-hotels .registration .date-dep .date-label {
+        width: 296px;
+        padding: 6px 35px 6px 16px;
+        margin: 0;
+        border: none;
+        background: #f2f2f2;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000;
+    }
+    
+    .search-hotels .registration .calendar-input a {
+        display: block;
+        margin: 0;
+        fill: #c2c2c2;
+        width: 19.875px;
+        height: 21.916px;
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+    
+    .search-hotels .registration .adults_field {
+        display: block;
+        float: left;
+        position: relative;
+        width: 49%;
+        margin: 0;
+    }
+    
+    .search-hotels .registration .children_field{
+        display: block;
+        position: relative;
+        margin: 0 20px 0 0;
+        float: right;
+        margin: 0;
+    }
+    
+    .search-hotels .registration .adults_field_label,
+    .search-hotels .registration .children_field_label {
+        padding: 6px 27px;
+        margin: 0 0 0 26px;
+        width: 60px;
+        display: block;
+        float: right;
+        border: none;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        line-height: 26px;
+        color: #000;
+        background: #f2f2f2;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;    
+    }
+    
+    .search-hotels .registration .adults_field_label a,
+    .search-hotels .registration .children_field_label a{
+        display: block;
+        margin: 0;
+        fill: #c2c2c2;
+        width: 9.917px; 
+        position: absolute;
+    }
+    
+    .search-hotels .registration .btn-control-minus {
+        right: 88px;
+        top: 19px;
+    }
+    
+    .search-hotels .registration .btn-control-plus{
+        right: 13px;
+        top: 15px;
+    }
+    
+    .search-hotels .registration .button_block {
+        padding: 0;
+        margin: 54px 0 0;
+    }
+    
+    .search-hotels .registration .button_block .submit {
+        width: 100%;
+        padding: 16px;
+        margin: 0;
+        border: none;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 21px;
+        line-height: 26px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        background: #81b3d2;
+    }
+    
+    .footer {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .footer .footer-content {
+        width: 100%;
+        position: absolute;
+        bottom: 4px;
+        padding: 0;
+        margin: 0;
+        background: #fff;
+        opacity: 0.9;
+    }
+    
+    .footer .footer-content .block {
+        min-height: 53px;
+        padding: 38px 110px;
+        margin: 0;
+        float: left;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 21px;
+        line-height: 26px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        color: #000;
+    }
+     
+    .footer .footer-content .block:last-child {
+        margin: 0;
+        float: right;
+        font-size: 14px;
+    }
+    
+    
+    .footer .footer-content .block ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer .footer-content .block li {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        float: left;
+    }
+    
+    .footer .footer-content .block ul li a {
+        margin: 0 6px 0 0;
+        padding: 0;
+        width: 47px;
+        height: 48px;
+        display: block;
+        background: #81b3d2;
+        fill: #fff;
+    }
+    
+    .footer .footer-content .block .youtube {
+        margin: 0;
+        
+    }
+    
+    .footer .footer-content .block .twitter svg,
+    .footer .footer-content .block .facebook svg,
+    .footer .footer-content .block .youtube svg{
+        position: relative;
+        top: 10px;
+        fill: #fff;
+    }
+    
+    .footer .footer-content .block p {
+        display: inline-block;
+        padding: 0;
+        margin: 8px 10px 0 6px;
+    }
+    
+    .footer .footer-content .block svg {
+        fill: #000;
+    }
+}
+
