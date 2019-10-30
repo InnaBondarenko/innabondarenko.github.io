@@ -55,45 +55,58 @@ table {
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?pi9prv");
-  src: url("../fonts/icomoon.eot?pi9prv#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?pi9prv") format("truetype"), url("../fonts/icomoon.woff?pi9prv") format("woff"), url("../fonts/icomoon.svg?pi9prv#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?whrmi2');
+    src:  url('../fonts/icomoon.eot?whrmi2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?whrmi2') format('truetype'),
+    url('../fonts/icomoon.woff?whrmi2') format('woff'),
+    url('../fonts/icomoon.svg?whrmi2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+    content: "\e905";
+}
+.icon-social-facebook:before {
+    content: "\e906";
+}
+.icon-social-skype:before {
+    content: "\e907";
+}
+.icon-social-linkedin:before {
+    content: "\e908";
+}
 .icon-location-outline:before {
-  content: "\e904";
+    content: "\e904";
 }
-
 .icon-input-checked:before {
-  content: "\e900";
+    content: "\e900";
 }
-
 .icon-mail:before {
-  content: "\e902";
+    content: "\e902";
 }
-
 .icon-pin-outline:before {
-  content: "\e901";
+    content: "\e901";
 }
-
 .icon-calender-outline:before {
-  content: "\e903";
+    content: "\e903";
 }
 
 html {
@@ -131,7 +144,7 @@ a {
 
 a:hover, a:focus {
   color: #b61b1b;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus {
@@ -337,15 +350,15 @@ a:focus {
 }
 
 .img-round {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   overflow: hidden;
 }
 
 .img-main {
-  width: 300px;
+  width: 250px;
   margin: 0 -20px;
 }
 
@@ -381,10 +394,17 @@ a:focus {
 .block-education {
   margin-bottom: 30px;
 }
+.block-education .icon {
+    color: #929292;
+    font-size: 20px;
+    padding-right: 0;
+    top: 3px;
+}
 
 .block-education span {
   font-size: 14px;
   color: #929292;
+    margin-right: 5px;
 }
 
 .block-heading {
@@ -400,7 +420,42 @@ a:focus {
 .block-skills {
   width: 100%;
 }
-
+.block-skills-short {
+    max-width: 535px;
+    margin: 0 10px;
+}
+.block-skills-short-title {
+    text-transform: uppercase;
+    color: #b61b1b;
+    margin-bottom: 20px;
+}
+.block-skills-short ul {
+    margin-bottom: 30px;
+}
+.block-skills-short li {
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    padding: 3px 10px;
+    margin: 0 10px 5px 0;
+}
+.block-skills-short-lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+    min-height: 65px;
+}
+.block-skills-short-lang .description {
+    color: #ccc;
+    font-size: 12px;
+}
+.block-skills-short-lang:last-child {
+    border-bottom: 1px dashed transparent;
+}
+.block-skills-short-lang ul {
+    margin: 0;
+}
 .block-skills li {
   position: relative;
   padding: 7px 10px 7px 35px;
@@ -415,7 +470,20 @@ a:focus {
 .block-skills .list li {
   padding: 0;
 }
-
+.bullets {
+    display: inline-block;
+}
+.bullets li {
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 2px;
+    padding: 0;
+}
+.bullets li.filled {
+    background: #b61b1b;
+}
 .block-center {
   text-align: center;
   width: 100%;
@@ -515,24 +583,24 @@ input {
           justify-content: space-between;
   z-index: 2;
   opacity: 0;
-  padding: 0 15px;
+  padding: 0 5px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .portfolio-item .caption h4 {
-  margin: 20px 0 0;
-  font-size: 16px;
+  margin: 5px 0 0;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .portfolio-item .caption h4:before, .portfolio-item .caption h4:after {
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   position: absolute;
   left: 0;
   right: 0;
@@ -542,12 +610,12 @@ input {
 
 .portfolio-item .caption h4:before {
   width: 40px;
-  bottom: 10px;
+  bottom: 8px;
 }
 
 .portfolio-item .caption h4:after {
   width: 20px;
-  bottom: 5px;
+  bottom: 4px;
 }
 
 .portfolio-item .caption h4, .portfolio-item .caption .text, .portfolio-item .caption a {
@@ -562,44 +630,51 @@ input {
 }
 
 .portfolio-item .caption .text {
-  font-size: 14px;
+  font-size: 12px;
+}
+.portfolio-item .caption .text li {
+    display: inline-block;
 }
 
-.portfolio-item:hover .caption {
-  opacity: 1;
-  -webkit-transition: all 0.5s linear 0s;
-       -o-transition: all 0.5s linear 0s;
-          transition: all 0.5s linear 0s;
+@media screen and (min-width: 992px) {
+    .portfolio-item:hover .caption {
+        opacity: 1;
+        -webkit-transition: all 0.5s linear 0s;
+        -o-transition: all 0.5s linear 0s;
+        transition: all 0.5s linear 0s;
+    }
+
+    .portfolio-item:hover .caption h4, .portfolio-item:hover .caption .text, .portfolio-item:hover .caption a {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    .portfolio-link {
+        border: 1px solid #fff;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        padding: 5px 15px;
+        color: #fff;
+        font-weight: bold;
+        margin: 4px 0 10px;
+        font-size: 13px;
+    }
+
+    .portfolio-link:visited, .portfolio-link:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .portfolio-link:hover {
+        background: #fff;
+        color: #b61b1b;
+        text-decoration: none;
+    }
 }
 
-.portfolio-item:hover .caption h4, .portfolio-item:hover .caption .text, .portfolio-item:hover .caption a {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-       -o-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
-}
 
-.portfolio-link {
-  border: 2px solid #fff;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  padding: 5px 15px;
-  color: #fff;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.portfolio-link:visited, .portfolio-link:focus {
-  color: #fff;
-  text-decoration: none;
-}
-
-.portfolio-link:hover {
-  background: #fff;
-  color: #b61b1b;
-  text-decoration: none;
-}
 
 .icon {
   color: #b61b1b;
@@ -614,22 +689,28 @@ input {
   font-size: 30px;
   top: 7px;
 }
-
+.section.about {
+    align-items: center;
+}
 .about .block-holder {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 75%;
 }
 
 .list {
-  padding: 30px 0;
+  padding: 10px 0 30px;
 }
 
 .list li {
   list-style: disc;
   margin-left: 30px;
+}
+.list ul li {
+    list-style: circle;
 }
 
 .popup {
@@ -692,7 +773,8 @@ input {
     display: block;
   }
   .block-skills {
-    width: 30%;
+    width: 55%;
+      margin-right: 10px;
   }
   .portfolio-item {
     width: 330px;
