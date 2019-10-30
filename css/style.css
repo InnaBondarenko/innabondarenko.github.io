@@ -549,7 +549,9 @@ input {
       -ms-flex-item-align: center;
           align-self: center;
 }
-
+.portfolio-item-link {
+    display: block;
+}
 .portfolio-item .caption {
   position: absolute;
   top: 0;
