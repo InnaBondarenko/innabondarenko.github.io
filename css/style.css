@@ -553,21 +553,7 @@ input {
     display: block;
 }
 .portfolio-item .caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  text-align: center;
   display: none;
-  z-index: 2;
-  opacity: 0;
-  padding: 0 5px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .portfolio-item .caption h4 {
@@ -645,6 +631,19 @@ input {
         -moz-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        z-index: 2;
+        padding: 0 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     .portfolio-item:hover .caption h4, .portfolio-item:hover .caption .text, .portfolio-item:hover .caption a {
